@@ -5,12 +5,12 @@ This review comes from the perspective of someone who has not used Linux on thei
 
 ## Specs
 
-<!-- ![neofetch](pic/neofetch.png]) -->
+![neofetch](./images/neofetch.png)
 
 ### Hardware
 
 - i7-9750H
-- Radeon 2070
+- Radeon 2070 Max Q
 - 32GB RAM
 - Samsung 1TB 980 EVO
 
@@ -47,7 +47,13 @@ Very nice computer. The keyboard definately takes some getting used too. Sometim
 
 ## Gaming
 
-Interested in playing:
-- Witcher 3
-- Civilization 6
+Steam is installed via Flatpak.
+
+### Civilization VI
+
+Runs in native Linux mode. Performance problems. Graphics seem slow and character animations are laggy. Some UI glitches where cannot select certain things such as city production, etc. Mostly playabe but not too enjoyable.
+
+### Hades
+
+Works perfectly
 
