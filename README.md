@@ -1,7 +1,8 @@
 # XMG Fusion 15 Review
+
 Review of my XMG Fusion 15 with Pop OS
 
-This review comes from the perspective of someone who has not used Linux on their personal computer full time and coming from Windows and Mac backgrounds. I am a developer who also likes to game casually
+This review comes from the perspective of someone who has not used Linux on their personal computer full-time and coming from Windows/Mac backgrounds. I am a developer who also likes to game casually.
 
 ## Specs
 
@@ -22,6 +23,10 @@ This review comes from the perspective of someone who has not used Linux on thei
 ## Setup
 
 ### Installing Pop!_OS
+
+- Use Rufus or Etcher to flash a USB drive
+- In the BIOS, set the computer to boot from legacy mode so that the USB stick can be recognized as a boot device
+- Standard installation procedure should start
 
 ### Installing drivers
 
@@ -51,9 +56,13 @@ Steam is installed via Flatpak.
 
 ### Civilization VI
 
-Runs in native Linux mode. Performance problems. Graphics seem slow and character animations are laggy. Some UI glitches where cannot select certain things such as city production, etc. Mostly playabe but not too enjoyable.
+- Runs in native Linux mode
+- Graphics driver in menu says "unknown"
+- Performance problems. Graphics seem slow and character animations are laggy. Some UI glitches where cannot select certain things such as city production, etc. Mostly playabe but not too enjoyable.
 
 ### Hades
 
-Works perfectly
+Works perfectly. Save file syncs across across platforms.
+
+### Witcher 3
 
