@@ -86,6 +86,7 @@ Easily the worst part of this laptop. There are two tiny speakers at the bottom 
 
 3. Error on startup: `Apr 16 14:05:37 pop-os kernel: usb usb2-port1: Cannot enable. Maybe the USB cable is bad?`. To see messages: `journalctl -f`
   - It seems that my left USB port does not work... But the two on the right do work. No idea why, I believe ths one used to work.
+  - This port seems to be the USB-A 3.2 Gen 2.
 
 
 ## Applications
