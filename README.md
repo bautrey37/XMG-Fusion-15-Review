@@ -1,6 +1,6 @@
 # XMG Fusion 15 Review
 
-Review of my XMG Fusion 15 with Pop OS
+Review of my XMG Fusion 15 with Pop_OS
 
 This review comes from the perspective of someone who has not used Linux on their personal computer full-time and coming from Windows/Mac backgrounds. I am a developer who also likes to game casually.
 
@@ -22,7 +22,7 @@ This review comes from the perspective of someone who has not used Linux on thei
 
 ## Setup
 
-### Installing Pop!_OS
+### Installing Pop_OS
 
 - Use Rufus or Etcher to flash a USB drive
 - In the BIOS, set the computer to boot from legacy mode so that the USB stick can be recognized as a boot device
@@ -44,20 +44,49 @@ Awesome keyboard backlight driver to customize per key RGB: https://github.com/p
 
 ## First Impressions
 
-Very nice computer. The keyboard definately takes some getting used too. Sometimes the keys do not type when I press them so its like I need to use more force. The keys feel like they are bigger and more spaced out than the macbook I was uses before.
+Very nice computer.
+
+
+### Hardware
+
+- The USB ports are very tight and they hold in USB devices very strong. It takes some muscle to put them in and pull them out
+- Same with the microphone jack, it is very strong and hard to put in and pull out.
+
+#### GPU
+
+- On dedicated Nvidia graphics mode, the computer gets noticably hotter. The chasis where your palms rest get pretty hot. Yet, the keyboard remains cool because you can feel the air being sucked in through the keyboard.
+- The fans don't get too loud when using all of the GPU
+
+#### Keyboard
+
+- The keyboard definately takes some getting used too. Sometimes the keys do not type when I press them. I feel like it is harder to type faster, because the keys are consistently not being pressed. This may be because I was used to a Mac chicklet keyboard, where barely any force is needed.
+- The keys feel like they are bigger and more spaced out than the macbook I was uses before.
+- I am also consistently accidently brushing the trackpad when I'm typing, causing the cursor to go to another part of the paragraph. This can be fixed by using a mouse and disabling the trackpad.
+
+#### Sound
+
+Easily the worst part of this laptop. There are two tiny speakers at the bottom on each side. The speaker strength they put out are not very high
 
 ## Issues
 
-### Linux OS
+### Software
 
-1. Dropbox Pro features are not fully supported such as Smart Sync. Making the service not very useful and will take up too much space.
+1. Text is missing after resuming from sleep.
+  Ex: https://askubuntu.com/questions/795278/how-to-fix-missing-characters-from-font-after-awakening-from-suspend
+  Ex: https://pop-planet.info/forums/threads/text-in-gnome-disappears.795/
+  - restarting the shell seems to fix the issue
 
 
 ### Hardware
 
 1. Touchpad light for on/off does not light up
+
 2. Keyboard per key RGB and lightbar is not configurable
     a. Maybe using this software will help: https://www.reddit.com/r/XMG_gg/comments/hrv2qb/xmg_fusion_15_per_key_rgb_backlight_lightbar/
+
+3. Error on startup: `Apr 16 14:05:37 pop-os kernel: usb usb2-port1: Cannot enable. Maybe the USB cable is bad?`. To see messages: `journalctl -f`
+  - It seems that my left USB port does not work... But the two on the right do work. No idea why, I believe ths one used to work.
+
 
 ## Applications
 
@@ -69,7 +98,7 @@ Very nice computer. The keyboard definately takes some getting used too. Sometim
 
 - Linux wrapper around the onenote browser is available: https://www.npmjs.com/package/p3x-onenote/v/2020.10.120, https://www.electronjs.org/apps/p3x-onenote
 
-Problems:
+#### Problems:
 - Application text is mixed. Part of the UI is in Estonian, and English. The language settings does not seem to be configurable and it might take the language from your location or where your account is registered with. I use onenote with a EE (Estonian) email address.
   - https://github.com/patrikx3/onenote/issues/14
 
@@ -77,8 +106,8 @@ Problems:
 
 - Available from Microsoft official site: https://www.microsoft.com/en-us/microsoft-teams/download-app#allDevicesSection
 
-Problems:
-- Microfone does not work in teams. The microfone does work on Zoom, so its not a hardware or software problems with my setup.
+#### Problems:
+- Microphone does not work in teams. The microphone does work on Zoom, so its not a hardware or software problems with my setup.
 - Missing some features such as background bluring.
 
 ### Microsoft ToDo
@@ -86,11 +115,13 @@ Problems:
 Unofficial, community driven port: https://snapcraft.io/ao
 
 - Seems to work fine and has all the features the original app has.
-- Last updated: 21 May 2019. May not have some of the newer features from the offcial app.
+- Last updated: 21 May 2019. May not have some of the newer features from the official app.
 
 ## Gaming
 
 Steam is installed via Flatpak. Steam Proton is set to experimental.
+
+Gaming is more consistently better performing when the laptop is set to only use Nvidia GPU instead of the Hybrid one. There may be an issue where the laptop is not switching GPU properly.
 
 ### Civilization VI
 
@@ -106,7 +137,7 @@ The game becomes playable with this fix, however there are still problems
 - graphics card is unknown
 - sound stops playing after playing the game awhile.
 
-I suspect, that the game is not switching the laptop to use hte dedicated GPU and is instead using the integrated Intel GPU, which can be the cause for hte bad graphics performance.
+I suspect, that the game is not switching the laptop to use the dedicated GPU and is instead using the integrated Intel GPU, which can be the cause for hte bad graphics performance.
 
 ### Civilization V
 
@@ -116,7 +147,12 @@ Lekmod (multiplayer mod), has to run under a Windows environment.
 
 ### Hades
 
-Works perfectly on Proton. Save file syncs across across platforms.
+Runs perfectly on Proton. Save file syncs across across platforms.
+
+#### Issues
+
+- Sometimes launches with a black screen. Restarting the computer usually fixes this.
+- Sometimes switching between full screen game and other windows, causes the game to black out the screen.
 
 ### Witcher 3
 
